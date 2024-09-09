@@ -8,7 +8,6 @@ body {
 body {
     overflow-x: hidden;
     font-family: "Manrope", sans-serif;
-    letter-spacing: -0.03em;
     background-color: #ffffff;
 }
 
@@ -34,6 +33,7 @@ body {
     font-size: 60px;
     font-weight: 400;
     line-height: 60px;
+    letter-spacing: -0.03em;
     color: #121212;
 }
 
@@ -55,6 +55,7 @@ body {
     font-size: 20px;
     font-weight: 400;
     line-height: 27px;
+    letter-spacing: -0.03em;
     color: #ffffff;
 }
 
@@ -78,6 +79,7 @@ body {
     font-size: 45px;
     font-weight: 400;
     line-height: 61px;
+    letter-spacing: -0.03em;
 }
 
 .about__btn {
