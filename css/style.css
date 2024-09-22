@@ -407,14 +407,6 @@ h2 {
     margin-top: 30px;
 }
 
-.contacts__tel {
-    font-size: 60px;
-    font-weight: 400;
-    line-height: 60px;
-    color: #121212;
-    text-decoration: none;
-}
-
 .contacts__link {
     position: relative;
     font-size: 60px;
