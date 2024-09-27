@@ -68,9 +68,6 @@ h2 {
 }
 
 .header__container {
-    max-width: 1180px;
-    padding: 0 15px;
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -233,6 +230,7 @@ h2 {
 
 .projects {
     margin-top: 150px;
+    margin-bottom: 150px;
 }
 
 .projects__title {
@@ -303,7 +301,6 @@ h2 {
 /* @section services */
 
 .services {
-    margin-top: 150px;
     padding: 151px 0 150px;
     color: #FFFFFF;
     background-color: #121212;
@@ -373,6 +370,7 @@ h2 {
 .contacts {
     /* margin-top: 150px; */
     margin-top: 186px;
+    margin-bottom: 160px;
 }
 
 .contacts__title {
@@ -463,7 +461,7 @@ h2 {
 
 .footer {
     /* margin-top: 151px; */
-    margin-top: 160px;
+    /*  margin-top: 160px; */
     padding-top: 60px;
     padding-bottom: 30px;
     background-color: #121212;
