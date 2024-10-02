@@ -242,6 +242,7 @@ h2 {
 
 .projects-list {
     margin-top: 30px;
+    margin-bottom: 90px;
 }
 
 .projects-list :first-child {
@@ -250,6 +251,10 @@ h2 {
 
 .projects-item {
     margin-top: 90px;
+}
+
+.projects-item__img-wrapper {
+    height: 450px;
 }
 
 .projects-item__img {
@@ -277,7 +282,6 @@ h2 {
 }
 
 .projects__btn {
-    margin-top: 90px;
     display: block;
     text-align: center;
     font-size: 30px;
@@ -323,6 +327,10 @@ h2 {
 
 .services-item {
     margin-top: 60px;
+}
+
+.services-item__img-wrapper {
+    height: 270px;
 }
 
 .services-item__img {
