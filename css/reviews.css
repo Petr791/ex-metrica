@@ -1,0 +1,125 @@
+.reviews {
+    margin-bottom: 150px;
+}
+
+.reviews__title {
+    margin-bottom: 31px;
+}
+
+.reviews-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    column-gap: 50px;
+    /* row-gap: 80px; */
+    row-gap: 81px;
+}
+
+.reviews-item {
+    width: calc(50% - 25px);
+    /* border: 1px solid green; */
+}
+
+
+/* Ограничение ширины элементов как в макете*/
+
+.reviews-item:not(.reviews-item:last-child:nth-child(2n+1)) {
+    max-width: 530px;
+}
+
+
+/* Ширина элемента если элемент нечетный и последний */
+
+.reviews-item:last-child:nth-child(2n+1) {
+    /* width: 75%; */
+    width: 861px;
+}
+
+.reviews-item__title {
+    /*  margin-bottom: 14px; */
+    margin-bottom: 13px;
+    font-size: 45px;
+    line-height: 61px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.reviews-item__text {
+    margin-bottom: 29px;
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.reviews-item__text:last-child {
+    margin-bottom: 0;
+}
+
+
+/* media queries */
+
+@media (max-width: 961px) {
+    .reviews {
+        margin-bottom: 120px;
+    }
+    .reviews__title {
+        margin-bottom: 31px;
+    }
+    .reviews-list {
+        justify-content: space-between;
+        column-gap: 10px;
+        row-gap: 80px;
+    }
+    .reviews-item {
+        width: calc(50% - 5px);
+    }
+    .reviews-item:last-child:nth-child(2n+1) {
+        /* width: 75%; */
+        width: 100%;
+        max-width: 694px;
+    }
+    .reviews-item__title {
+        margin-bottom: 25px;
+        font-size: 35px;
+        line-height: 48px;
+    }
+    .reviews-item__text {
+        margin-bottom: 26px;
+        font-size: 20px;
+        line-height: 27px;
+    }
+}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 550px) {
+    .reviews {
+        margin-bottom: 80px;
+    }
+    .reviews__title {
+        margin-bottom: 23px;
+    }
+    .reviews-list {
+        flex-direction: column;
+        column-gap: 50px;
+        /* row-gap: 75px; */
+        row-gap: 79px;
+    }
+    .reviews-item {
+        width: 100%;
+    }
+    .reviews-item:last-child:nth-child(2n+1) {
+        /* width: 100%; */
+    }
+    .reviews-item__title {
+        margin-bottom: 10px;
+        font-size: 25px;
+        line-height: 34px;
+    }
+    .reviews-item__text {
+        margin-bottom: 20px;
+        font-size: 16px;
+        line-height: 22px;
+    }
+}
