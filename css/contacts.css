@@ -1,0 +1,77 @@
+/* @section contacts */
+
+.contacts {
+    /* margin-top: 150px; */
+    margin-top: 186px;
+    margin-bottom: 160px;
+}
+
+.contacts__title {
+    position: relative;
+}
+
+.contacts__title::before {
+    content: "";
+    display: block;
+    position: absolute;
+    /* height: 24px;
+    width: 24px; */
+    height: 22px;
+    width: 22px;
+    top: -34px;
+    left: -5px;
+    background-image: url("../img/contacts/phone.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.contacts__list {
+    margin-top: 32px;
+}
+
+.contacts__list :first-child {
+    margin-top: 0px;
+}
+
+.contacts__item {
+    margin-top: 30px;
+}
+
+.contacts__link {
+    position: relative;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 60px;
+    color: #121212;
+    text-decoration: none;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+.contacts__link:hover {
+    opacity: 50%;
+}
+
+.contacts__link::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 0%;
+    top: 79px;
+    left: 50%;
+    background-color: #121212;
+    opacity: 50%;
+    -webkit-transition: width .2s ease-in-out;
+    -moz-transition: width .2s ease-in-out;
+    transition: width .2s ease-in-out;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.contacts__link:hover:after {
+    width: 100%;
+}
