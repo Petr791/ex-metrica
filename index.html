@@ -17,12 +17,12 @@
 <body>
 
     <!-- header -->
-    <!--    <header class="header">
+    <header class="header">
         <div class="container">
             <div class="header__container">
                 <div class="header-logo">
                     <a class="header-logo__link" href="#">
-                        <img class="header-logo__img" src="./img/logo.png" alt="Логотип Метрика">
+                        <img class="header-logo__img" src="./img/header/logo.png" alt="Логотип Метрика">
                     </a>
                 </div>
                 <nav class="header-nav">
@@ -41,16 +41,18 @@
                         </li>
                     </ul>
                 </nav>
+                <button class="js-burger-btn burger-btn" type="button">
+				</button>
             </div>
         </div>
         </div>
-    </header> -->
+    </header>
     <!-- /header -->
     <!-- main -->
     <main>
         <section class="hero">
             <div class="container">
-                <h1 class="hero__title">Современные и стильные интерьеры для&nbsp комфортной жизни</h1>
+                <h1 class="hero__title">Современные и стильные интерьеры для&nbsp;комфортной жизни</h1>
                 <div class="hero__block">
                     <p class="hero__desc">Мы - команда квалифицированных дизайнеров и архитекторов, занимающихся разработкой и реализацией дизайн-проектов</p>
                 </div>
@@ -167,7 +169,7 @@
                     </li>
                 </ul>
 
-                <button class="services__btn" type="button">Заказать услугу</button>
+                <button class="services__btn js-btn" type="button">Заказать услугу</button>
             </div>
         </section>
 
@@ -221,41 +223,91 @@
             </div>
         </section>
 
-        <!-- <section class="examples">
-            <div class="container">
-                <div class="examples__block">
-                    <h3 class="examples__desc">Проект Двухкомнтаной квартиры в ЖК Лесной Пейзаж</h3>
+        <section class="gallery">
+            <div class="gallery__title-wrapper">
+                <div class="container">
+                    <h2 class="gallery__title">галерея проектов</h2>
                 </div>
             </div>
-        </section>
- -->
-        <!-- 
-   <section class="gal">
-            <div class="gal__block">
-                <div class="container">
-                    <div class="gal__wrapper">
-                        <div class="gal__item"></div>
-                        <div class="gal__item"></div>
+            <div class="gallery-slides">
+
+                <div class="gallery-slide gallery-slide--active">
+                    <picture>
+                        <source srcset="./img/gallery/gallery-1_mobile.jpeg" media="(max-width: 550px)">
+                        <source srcset="./img/gallery/gallery-1_tablet.jpeg" media="(max-width: 961px)">
+                        <img class="gallery-slide__image" src="./img/gallery/gallery-1.jpg" alt="Изображение двухкомнтаной квартиры в ЖК Лесной Пейзаж">
+                    </picture>
+                    <div class="gallery-slide__desc-wrapper">
+                        <div class="container">
+                            <p class="gallery-slide__desc">Проект &nbsp;Двухкомнтаной квартиры в ЖК Лесной Пейзаж</p>
+                        </div>
                     </div>
                 </div>
-        </section> -->
+                <div class="gallery-slide">
+                    <picture>
+                        <source srcset="./img/gallery/gallery-2.jpg" media="(max-width: 550px)">
+                        <source srcset="./img/gallery/gallery-2.jpg" media="(max-width: 961px)">
+                        <img class="gallery-slide__image" src="./img/gallery/gallery-2.jpg" alt="Изображение гостиной в ЖК Маяк">
+                    </picture>
+                    <div class="gallery-slide__desc-wrapper">
+                        <div class="container">
+                            <p class="gallery-slide__desc">Проект гостиной в ЖК Маяк</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-slide">
+                    <picture>
+                        <source srcset="./img/gallery/gallery-3.jpg" media="(max-width: 550px)">
+                        <source srcset="./img/gallery/gallery-3.jpg" media="(max-width: 961px)">
+                        <img class="gallery-slide__image" src="./img/gallery/gallery-3.jpg" alt="Изображение кухни-гостиной в частном доме">
+                    </picture>
+                    <div class="gallery-slide__desc-wrapper">
+                        <div class="container">
+                            <p class="gallery-slide__desc">Визуализация кухни-гостиной в частном доме</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-slide">
+                    <picture>
+                        <source srcset="./img/gallery/gallery-4.jpg" media="(max-width: 550px)">
+                        <source srcset="./img/gallery/gallery-4.jpg" media="(max-width: 961px)">
+                        <img class="gallery-slide__image" src="./img/gallery/gallery-4.jpg" alt="Изображение кухни в скандинавском стиле для ЖК Северный Ветер">
+                    </picture>
+                    <div class="gallery-slide__desc-wrapper">
+                        <div class="container">
+                            <p class="gallery-slide__desc">Проект кухни в скандинавском стиле для ЖК Северный Ветер</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            <div class="gallery__controls-wrapper">
+                <div class="container">
+                    <div class="gallery__controls">
+                        <button type="button" class="gallery__control-prev"></button>
+                        <button type="button" class="gallery__control-next"></button>
+                    </div>
+                </div>
+            </div>
 
-        <!-- <section id="section-contacts" class="contacts">
+        </section>
+
+        <section id="section-contacts" class="contacts">
             <div class="container">
                 <h2 class="contacts__title">Контакты</h2>
                 <ul class="contacts__list">
-                    <li class="contacts__item"><a class="contacts__link" href="tel:+79358954535">+7 935&nbsp 895-45-35</a></li>
-                    <li class="contacts__item"><a class="contacts__link" href="mailto:hello@mail.com">hello@mail.com</a></li>
+                    <li class="contacts__item"><a class="contacts__link contacts__link--phone" href="tel:+79358954535"><span>+7
+							935&nbsp 895-45-35</span></a></li>
+                    <li class="contacts__item"><a class="contacts__link contacts__link--mail" href="mailto:hello@mail.com"><span>hello@mail.com</span></a></li>
                 </ul>
             </div>
-        </section> -->
+        </section>
 
     </main>
     <!-- /main -->
 
     <!-- footer -->
-    <!--   <footer class="footer">
+    <footer class="footer">
         <div class="container">
             <nav class="footer-nav">
                 <ul class="footer-menu__list">
@@ -278,10 +330,69 @@
                 <a class="copyright__link" href="#">студия дизайна интерьера Метрика — 2023</a>
             </p>
         </div>
-    </footer> -->
+    </footer>
     <!-- /footer -->
 
-    <!-- <script src="./js/"></script> -->
+    <!-- burger menu -->
+    <div class="js-burger burger">
+        <div class="burger__content">
+            <div class="burger-logo">
+                <img class="burger-logo__img" src="./img/header/logo.png" alt="Логотип Метрика">
+            </div>
+            <nav class="burger-nav">
+                <ul class="burger-menu__list">
+                    <li class="burger-menu__item">
+                        <a class="burger-menu__link" href="#section-about">О НАС</a>
+                    </li>
+                    <li class="burger-menu__item">
+                        <a class="burger-menu__link" href="#section-projects">ПРОЕКТЫ</a>
+                    </li>
+                    <li class="burger-menu__item">
+                        <a class="burger-menu__link" href="#section-services">УСЛУГИ</a>
+                    </li>
+                    <li class="burger-menu__item">
+                        <a class="burger-menu__link" href="#section-contacts">КОНТАКТЫ</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="js-burger__content burger-contacts">
+                <h4 class="burger-contacts__title">для связи:</h4>
+                <nav class="burger-contacts__nav">
+                    <ul class="burger-contacts__list">
+                        <li class="burger-contacts__item">
+                            <a class="burger-contacts__link burger-contacts__link--phone" href="tel:+79358954535">+7 935 895-45-35</a>
+                        </li>
+                        <li class="burger-contacts__item">
+                            <a class="burger-contacts__link" href="mailto:hello@mail.com">hello@mail.com</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- /burger menu -->
+
+    <!-- popup -->
+    <div class="popup js-popup">
+        <div class="popup__content js-popup__content">
+            <div class="popup__close-btn js-popup__close-btn"></div>
+            <p class="popup__title">Заказать услугу</p>
+            <p class="popup__desc">Заполните форму, мы свяжемся с&nbsp;вами&nbsp;в&nbsp;течение&nbsp;суток
+            </p>
+            <form id="form" class="popup-form" action="#" autocomplete="on" method="post">
+                <input class="popup-form__input" type="text" name="name" placeholder="Имя">
+                <input class="popup-form__input" type="email" name="email" placeholder="Электронная почта">
+                <input class="popup-form__input" type="tel" name="phone" placeholder="Номер телефона">
+            </form>
+            <button id="form-btn" class="popup-form__btn" type="submit" form="form" name="send">Отправить</button>
+        </div>
+    </div>
+    <!-- /popup -->
+
+    <script src="./js/burger.js"></script>
+    <script src="./js/gallery.js"></script>
+    <script src="./js/popup.js"></script>
+    <script src="./js/index.js"></script>
 
 </body>
 

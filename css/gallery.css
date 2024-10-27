@@ -1,0 +1,206 @@
+/* @gallery */
+
+.gallery {
+    position: relative;
+    margin-bottom: 150px;
+}
+
+.gallery__title-wrapper {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    top: 67px;
+}
+
+.gallery__title {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+
+/*  */
+
+.gallery-slides {
+    height: 717px;
+    position: relative;
+}
+
+.gallery-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: opacity .3s linear;
+}
+
+.gallery-slide__image {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.gallery-slide--active {
+    opacity: 1;
+}
+
+.gallery-slide__desc-wrapper {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    /* bottom: 60px; */
+    top: 576px;
+}
+
+.gallery-slide__desc {
+    max-width: 443px;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 41px;
+    color: #ffffff;
+}
+
+
+/*  */
+
+.gallery__controls-wrapper {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    bottom: 165px;
+}
+
+.gallery__controls {
+    /*  margin-left: -8px; */
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 14px;
+}
+
+.gallery__control-prev,
+.gallery__control-next {
+    /* width: 40px;
+    height: 40px; */
+    width: 40px;
+    height: 33px;
+    border: none;
+    background: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+}
+
+.gallery__control-prev:hover,
+.gallery__control-next:hover {
+    opacity: 50%;
+}
+
+.gallery__control-prev {
+    margin-left: -9px;
+    background-image: url('../img/gallery/arrow.svg');
+}
+
+.gallery__control-next {
+    margin-right: -8px;
+    background-image: url('../img/gallery/arrow-2.svg');
+}
+
+
+/* media queries */
+
+@media (max-width: 961px) {
+    .gallery {
+        margin-bottom: 118px;
+    }
+    .gallery__title-wrapper {
+        top: 80px;
+    }
+    .gallery__title {
+        padding-left: 36px;
+        font-size: 20px;
+        line-height: 27px;
+    }
+    .gallery-slides {
+        height: 536px;
+    }
+    .gallery-slide__desc-wrapper {
+        /* bottom: 80px; */
+        top: 388px;
+    }
+    .gallery-slide__desc {
+        max-width: 400px;
+        padding-left: 36px;
+        font-size: 25px;
+        line-height: 34px;
+    }
+    .gallery__controls-wrapper {
+        /* bottom: 157px; */
+        bottom: 156px;
+    }
+    .gallery__controls {
+        padding-left: 36px;
+    }
+    .gallery__control-prev,
+    .gallery__control-next {
+        height: 34px;
+    }
+}
+
+@media (max-width: 550px) {
+    .gallery {
+        margin-bottom: 80px;
+    }
+    .gallery__title-wrapper {
+        top: 61px;
+    }
+    .gallery__title {
+        padding-left: 0px;
+        font-size: 14px;
+        line-height: 19px;
+    }
+    .gallery-slides {
+        height: 408px;
+    }
+    .gallery-slide__desc-wrapper {
+        /* bottom: 60px; */
+        top: 296px;
+    }
+    .gallery-slide__desc {
+        padding-left: 0;
+        /* max-width: 287px; */
+        max-width: 283px;
+        font-size: 19px;
+        line-height: 26px;
+    }
+    /*  */
+    .gallery__controls-wrapper {
+        bottom: 50%;
+        transform: translate(0, 50%);
+    }
+    .gallery__controls {
+        margin-left: 0;
+        padding-left: 0;
+        justify-content: space-between;
+    }
+    .gallery__control-prev,
+    .gallery__control-next {
+        width: 30px;
+        height: 30px;
+    }
+    .gallery__control-prev {
+        margin-left: -7px;
+    }
+    .gallery__control-next {
+        margin-right: -7px;
+    }
+}

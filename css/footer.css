@@ -34,7 +34,8 @@
 }
 
 .copyright {
-    margin-top: 87px;
+    /* margin-top: 87px; */
+    margin-top: 88px;
     text-align: center;
 }
 
@@ -44,4 +45,30 @@
     line-height: 27px;
     color: #ffffff;
     text-decoration: none;
+}
+
+
+/* media queries */
+
+@media (max-width: 961px) {}
+
+@media (max-width: 550px) {
+    .footer {
+        padding-top: 30px;
+        padding-bottom: 26px;
+    }
+    .footer-menu__list {
+        column-gap: 30px;
+    }
+    .footer-menu__link {
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .copyright {
+        margin-top: 41px;
+    }
+    .copyright__link {
+        font-size: 13px;
+        line-height: 18px;
+    }
 }

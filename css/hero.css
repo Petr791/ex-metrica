@@ -36,11 +36,9 @@
 
 /* media queries */
 
-@media (max-width: 1200px) {}
-
 @media (max-width: 961px) {
     .hero {
-        margin-top: 74px;
+        margin-top: 45px;
         margin-bottom: 120px;
     }
     .hero__title {
@@ -62,7 +60,7 @@
 
 @media (max-width: 550px) {
     .hero {
-        margin-top: 61px;
+        margin-top: 57px;
         margin-bottom: 80px;
     }
     .hero__title {
@@ -85,12 +83,8 @@
     }
 }
 
-@media (max-width: 375px) {}
-
 @media (max-width: 350px) {
     .hero__desc {
         max-width: 300px;
     }
 }
-
-@media (max-width: 320px) {}

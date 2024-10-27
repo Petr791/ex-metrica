@@ -1,5 +1,6 @@
 .reviews {
-    margin-bottom: 150px;
+    /* margin-bottom: 150px; */
+    margin-bottom: 151px;
 }
 
 .reviews__title {
@@ -61,7 +62,8 @@
 
 @media (max-width: 961px) {
     .reviews {
-        margin-bottom: 120px;
+        /* margin-bottom: 120px; */
+        margin-bottom: 122px;
     }
     .reviews__title {
         margin-bottom: 31px;
@@ -69,7 +71,7 @@
     .reviews-list {
         justify-content: space-between;
         column-gap: 10px;
-        row-gap: 80px;
+        row-gap: 78px;
     }
     .reviews-item {
         width: calc(50% - 5px);
