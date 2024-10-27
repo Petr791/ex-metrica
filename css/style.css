@@ -4,9 +4,10 @@
 @import url('./projects.css');
 @import url('./services.css');
 @import url('./reviews.css');
-@import url('./examples.css');
+@import url('./gallery.css');
 @import url('./contacts.css');
 @import url('./footer.css');
+@import url('./popup.css');
 *,
 html,
 body {
@@ -19,7 +20,7 @@ html {
 
 body {
     width: 100%;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     font-family: 'Manrope', sans-serif;
     color: #121212;
     background-color: #ffffff;
@@ -32,7 +33,9 @@ h4,
 p,
 a,
 li,
-span {
+span,
+input,
+button {
     letter-spacing: -0.03em;
 }
 
@@ -43,52 +46,22 @@ h2 {
     text-transform: uppercase;
 }
 
+button {
+    font-family: inherit;
+    cursor: pointer;
+}
+
 .container {
     max-width: 1180px;
     padding: 0 15px;
     margin: 0 auto;
-    /*  border: 1px solid red; */
+    /* border: 1px solid red; */
 }
-
-
-/*  */
-
-
-/* 
-.gal {
-    height: 400px;
-    position: relative;
-    background-color: rgb(250, 189, 96);
-}
-
-.gal__block {
-    width: 100%;
-    position: absolute;
-    bottom: 125px;
-    border: 1px solid rgb(255, 0, 128);
-}
-
-.gal__wrapper {
-    display: flex;
-    justify-content: flex-start;
-    column-gap: 30px;
-}
-
-.gal__item {
-    width: 30px;
-    height: 30px;
-    background-color: aqua;
-}
- */
 
 
 /* media queries */
 
-@media (max-width: 1200px) {}
-
 @media (max-width: 961px) {}
-
-@media (max-width: 768px) {}
 
 @media (max-width: 550px) {
     .container {
@@ -99,11 +72,3 @@ h2 {
         line-height: 19px;
     }
 }
-
-@media (max-width: 375px) {}
-
-@media (max-width: 350px) {}
-
-
-@media (max-width: 320px) {}
-

@@ -1,41 +1,25 @@
 /* @section contacts */
 
 .contacts {
-    /* margin-top: 150px; */
-    margin-top: 186px;
-    margin-bottom: 160px;
+    /*  margin-bottom: 160px; */
+    margin-bottom: 150px;
 }
 
-.contacts__title {
-    position: relative;
-}
-
-.contacts__title::before {
-    content: "";
-    display: block;
-    position: absolute;
-    /* height: 24px;
-    width: 24px; */
-    height: 22px;
-    width: 22px;
-    top: -34px;
-    left: -5px;
-    background-image: url("../img/contacts/phone.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-}
+.contacts__title {}
 
 .contacts__list {
-    margin-top: 32px;
-}
-
-.contacts__list :first-child {
-    margin-top: 0px;
+    margin-top: 74px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    /*  column-gap: 104px; */
+    column-gap: 55px;
 }
 
 .contacts__item {
-    margin-top: 30px;
+    width: calc(50% - 52px);
+    /* border: 1px solid blue; */
 }
 
 .contacts__link {
@@ -44,14 +28,50 @@
     font-weight: 400;
     line-height: 60px;
     color: #121212;
+    white-space: nowrap;
     text-decoration: none;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
 }
 
-.contacts__link:hover {
-    opacity: 50%;
+.contacts__link--mail {
+    top: -9px;
+}
+
+.contacts__item .contacts__link--phone {
+    /* display: inline-block;
+    margin-bottom: -50px; */
+}
+
+.contacts__link::before {
+    content: "";
+    display: block;
+    position: absolute;
+    /* height: 24px;
+    width: 24px; */
+    height: 22px;
+    width: 22px;
+    top: -36px;
+    /* top: -15px; */
+    left: 0px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.contacts__link--phone::before {
+    top: -37px;
+    left: -5px;
+    background-image: url("../img/contacts/phone.svg");
+}
+
+.contacts__link--mail::before {
+    top: -26px;
+    left: 1px;
+    height: 20px;
+    width: 20px;
+    background-image: url("../img/contacts/mail.svg");
 }
 
 .contacts__link::after {
@@ -72,6 +92,108 @@
     transform: translateX(-50%);
 }
 
-.contacts__link:hover:after {
-    width: 100%;
+.contacts__link--phone::after {
+    top: 70px;
+}
+
+
+/* media queries */
+
+@media (hover: hover) {
+    .contacts__link:hover {
+        /* opacity: 50%; */
+    }
+    .contacts__link:hover span {
+        opacity: 50%;
+    }
+    .contacts__link:hover:after {
+        width: 100%;
+        opacity: 50%;
+    }
+}
+
+@media (max-width: 1020px) {
+    .contacts__link {
+        font-size: 52px;
+        line-height: 60px;
+    }
+}
+
+@media (max-width: 961px) {
+    .contacts {
+        margin-bottom: 120px;
+    }
+    .contacts__list {
+        margin-top: 74px;
+        column-gap: 66px;
+    }
+    .contacts__item {
+        width: calc(50% - 62px);
+    }
+    .contacts__link {
+        font-size: 45px;
+        line-height: 60px;
+    }
+    .contacts__link--phone::before {
+        top: -47px;
+        left: -4px;
+    }
+    .contacts__link--mail::before {
+        top: -36px;
+        left: 3px;
+        height: 19px;
+        width: 19px;
+    }
+    .contacts__link::after {
+        top: 61px;
+    }
+    .contacts__link--phone::after {
+        top: 52px;
+    }
+}
+
+@media (max-width: 767px) {
+    .contacts__link {
+        font-size: 30px;
+        line-height: 40px;
+    }
+}
+
+@media (max-width: 550px) {
+    .contacts {
+        margin-bottom: 80px;
+    }
+    .contacts__list {
+        margin-top: 58px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 58px;
+    }
+    .contacts__item {
+        width: 100%;
+    }
+    .contacts__link {
+        font-size: 35px;
+        line-height: 45px;
+    }
+    .contacts__link::before {
+        height: 18px;
+        width: 18px;
+        top: -20px;
+        left: 0px;
+    }
+    .contacts__link--mail {
+        top: 0px;
+    }
+    .contacts__link--phone::before {
+        top: -36px;
+        left: -3px;
+    }
+    .contacts__link--mail::before {
+        top: -34px;
+        left: 1px;
+        height: 14px;
+        width: 16px;
+    }
 }
