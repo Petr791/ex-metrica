@@ -38,7 +38,8 @@
 
 @media (max-width: 961px) {
     .hero {
-        margin-top: 45px;
+        /* margin-top: 45px; */
+        margin-top: 73px;
         margin-bottom: 120px;
     }
     .hero__title {
@@ -60,7 +61,8 @@
 
 @media (max-width: 550px) {
     .hero {
-        margin-top: 57px;
+        /* margin-top: 57px; */
+        margin-top: 61px;
         margin-bottom: 80px;
     }
     .hero__title {
